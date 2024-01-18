@@ -47,3 +47,5 @@ function searchResults() {
         searchBox.append(row);
     }
 }
+
+
