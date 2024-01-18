@@ -1,0 +1,16 @@
+#results h1 {
+    padding: 20px;
+}
+
+.row {
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
