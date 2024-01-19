@@ -2,7 +2,7 @@ function searchResults() {
     // Total searched results
     totalResults = 3;
 
-    //Display total results
+    //Display search results
     for (var i = 0; i < totalResults; i++) {
 
         var searchBox = $('.search-box');
