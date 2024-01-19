@@ -1,11 +1,14 @@
-function searchResults() {
-    // Total searched results
-    totalResults = 3;
+function searchResults(count) {
 
-    //Display total results
-    for (var i = 0; i < totalResults; i++) {
+    var results = $('#results');
 
-        var searchBox = $('.search-box');
+    //Create Results Title
+    var resultsTitle = $('<h1>').text('Searched Book Results');
+    results.append(resultsTitle);
+
+
+    // Create results row
+    for (var i = 0; i < count; i++) {
         var row = $('<div>').addClass('row');
         var cover = $('<div>').addClass('cover col-sm-2');
         var information = $('<div>').addClass('information col-sm-2');
@@ -17,15 +20,12 @@ function searchResults() {
 
         // Book information
         var titleResult = $('<h4>').text('Title');
-
         var authorResult = $('<h4>').text('Author');
-
         var yearResult = $('<h4>').text('Year');
-
         information.append(titleResult, authorResult, yearResult);
 
         // Clickable lists
-        listSelection = 3;
+        var listSelection = 3;
         var checkboxes = $('<ul>');
         lists.append(checkboxes);
 
@@ -36,7 +36,7 @@ function searchResults() {
             list.append(input);
 
             //Add text to input
-            listsText = ['Want to read', 'Currently reading', 'Already read'];
+            var listsText = ['Want to read', 'Currently reading', 'Already read'];
             list.append(document.createTextNode(' ' + listsText[j]));
 
             //Append lists
@@ -44,8 +44,6 @@ function searchResults() {
         }
 
         row.append(cover, information, lists);
-        searchBox.append(row);
+        results.append(row);
     }
 }
-
-
