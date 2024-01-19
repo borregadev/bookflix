@@ -4,5 +4,5 @@ $(document).ready(async ()=> {
     searchResults(3);
 
     //just testing
-    console.log(await getNewestBooks());
+    if (await getResultByTitle() === null) console.log('AHA!');
 });
