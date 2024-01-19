@@ -5,14 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <!-- CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Bookflix</title>
+    <title>Bookflix Website - Project 1</title>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>Bookflix</h1>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-section">
+        <!-- Search Box -->
+        <div class="search-box">
+            <label for="search" class="search-label">Search here</label>
+            <input type="text" id="search" name="search" class="form-control" placeholder="Enter your search">
+        </div>
+
+        <!-- Search Button -->
+        <button class="btn btn-primary">Search</button>
+
+        <!-- Tick Box Options -->
+        <div class="tick-box-options">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="byTitle"> By Title
+            </label>
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="byAuthor"> By Author
+            </label>
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="bySubject"> By Subject
+            </label>
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="byText"> By Book Text
+            </label>
+        </div>
+    </div>
+
+    <!-- Thin Grey Line -->
+    <hr>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-    <!-- JavaScript -->
+    <!-- Custom JavaScript -->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
