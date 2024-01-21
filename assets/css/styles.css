@@ -30,3 +30,42 @@ li {
     border-width: 1px;
     border-color:black; 
 }
+/* Custom styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #f2f2f2;
+    padding: 20px 20px 20px 595px;
+    text-align: center;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.search-label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.search-box {
+    width: 60%; /* Adjust width as needed */
+}
+
+
+h1 {
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+
+hr {
+    border-color: #ccc; 
+    margin: 20;
+}
