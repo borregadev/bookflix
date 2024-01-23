@@ -7,9 +7,9 @@ function searchResults() {
 
         var searchBox = $('.search-box');
         var row = $('<div>').addClass('row');
-        var cover = $('<div>').addClass('cover col-sm-2');
-        var information = $('<div>').addClass('information col-sm-2');
-        var lists = $('<div>').addClass('lists col-sm-2');
+        var cover = $('<div>').addClass('cover col');
+        var information = $('<div>').addClass('information col');
+        var lists = $('<div>').addClass('lists col');
 
         // Cover image
         var coverResult = $('<img>').attr('src', './assets/images/cover.jpg');
