@@ -1,6 +1,12 @@
+
 // HTML document needs to be fully loaded first to prevent issues with unloaded elements
 document.addEventListener('DOMContentLoaded', function () {
-    
+     //calling the initial search result, which will display the newest books published instad search.
+    searchResults(3);
+
+    //just testing
+    if (await getResultByTitle() === null) console.log('AHA!');
+  
      // Get the search input, search button, and checkboxes
     var searchInput = document.getElementById('search');
     var searchButton = document.querySelector('.btn-primary');
@@ -70,5 +76,4 @@ function displaySearchResults(results) {
         
     }
 }
-
 
