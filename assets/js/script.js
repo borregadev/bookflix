@@ -1,6 +1,6 @@
 
 // HTML document needs to be fully loaded first to prevent issues with unloaded elements
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
      //calling the initial search result, which will display the newest books published instad search.
     searchResults(3);
 
