@@ -10,20 +10,21 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
-  .navbar-toggle {
+.navbar-toggle {
     display: none;
     cursor: pointer;
-  }
+}
 
-  .navbar-toggle span {
+.navbar-toggle span {
     display: block;
     width: 30px;
     height: 3px;
     background-color: #000000;
     margin: 6px 0;
-  }
+}
 
 .search-section {
     display: flex;
@@ -95,8 +96,8 @@ li {
     /* Navbar */
     .navbar-toggle {
         display: block;
-      }
-    
+    }
+
     /* --- */
 
     .hide {
