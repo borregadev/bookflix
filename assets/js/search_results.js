@@ -48,5 +48,3 @@ function searchResults(count) {
         results.append(row);
     }
 }
-
-searchResults(3);
