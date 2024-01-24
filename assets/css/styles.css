@@ -72,10 +72,6 @@ hr {
 }
 
 /* Results Section */
-#results {
-    display: none;
-}
-
 .search-box {
     width: 60%;
     /* Adjust width as needed */
@@ -103,26 +99,19 @@ li {
     margin-bottom: 10px;
 }
 
+.myShelf {  
+        position: fixed;
+        right: 0;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        padding: 10px;
+}  
+
 .box {
     border-style: solid;
     border-width: 1px;
     border-color: black;
-}
-
-.myShelf {
-    position: fixed;
-    right: 0;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    padding: 10px;
-    border: 10px;
-}
-
-.box {
-    border: 1px solid black;
-    padding: 10px;
-    margin-bottom: 20px;
 }
 
 footer {
