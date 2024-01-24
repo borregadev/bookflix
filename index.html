@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!--Google font styling-->
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <title>Bookflix Website - Project 1</title>
     <title>Bookflix</title>
 </head>
 
@@ -18,11 +17,9 @@
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <h1>Bookflix</h1>
         <img src="./assets/images/logo-no-background.png" alt="logo-no-background"/>
-        <div class="navbar-brand">
-            <h1>Bookflix</h1>
-        </div>
+        <h1>BOOKFLIX</h1>
+
         <div class="navbar-toggle">
             <span></span>
             <span></span>
@@ -44,18 +41,18 @@
         <!-- Tick Box Options -->
         <div class="tick-box-options">
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="byTitle"> By Title
+                <input type="radio" name="searchType" id="byTitle" class="form-check-input" value="byTitle" checked> By Title
             </label>
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="byAuthor"> By Author
+                <input type="radio" name="searchType" id="byAuthor" class="form-check-input" value="byAuthor"> By Author
             </label>
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="bySubject"> By Subject
+                <input type="radio" name="searchType" id="bySubject" class="form-check-input" value="bySubject"> By Subject
             </label>
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="byText"> By Book Text
+                <input type="radio" name="searchType" id="byText" class="form-check-input" value="byText"> By Book Text
             </label>
-        </div>
+        </div>        
     </div>
 
     <!-- Search/My Shelf -->
@@ -64,12 +61,7 @@
             <div id="results">
                 <div class="container-fluid search-box"></div>
             </div>
-      </div>
-
-
-
-        <div class="myShelf" style="width: 50%"> 
-            <h3>My Shelf</h3>
+        </div>
         <div class="col-lg-6 col-sm-12">
             <div class="row">
                 <div class="myShelf hide">
@@ -154,10 +146,13 @@
             </div>
         </div>
     </div>
+    <footer>
+        <p>&copy Group 17 (Carlos Borrega, Desire Anunobi, Gjorgji Krstevski, Mohammed Husain, Sufyan Gajra)</p>
+    </footer>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
     <!-- JavaScript -->
-    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/searchbar_toggle.js"></script>
     <script src="./assets/js/searchAPI.js"></script>
     <script src="./assets/js/search_results.js"></script>
     <script src="./assets/js/script.js"></script>
