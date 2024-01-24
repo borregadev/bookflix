@@ -71,10 +71,9 @@ hr {
     margin: 20px;
 }
 
-/* Results Section */
+/* Results/My Shelf Section */
 .search-box {
     width: 60%;
-    /* Adjust width as needed */
 }
 
 hr {
@@ -94,6 +93,10 @@ hr {
     margin: 0;
 }
 
+.myShelf h2 {
+    text-align: center;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -102,6 +105,8 @@ ul {
 li {
     margin-bottom: 10px;
 }
+
+/* Footer */
 
 footer {
     background-color: #f2f2f2;
