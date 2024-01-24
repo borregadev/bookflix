@@ -1,11 +1,10 @@
 
 // HTML document needs to be fully loaded first to prevent issues with unloaded elements
 document.addEventListener('DOMContentLoaded', async function () {
-     //calling the initial search result, which will display the newest books published instad search.
-    searchResults(3);
-
-    //just testing
-    if (await getResultByTitle() === null) console.log('AHA!');
+    //get the default result shown
+    let searchResult = await getNewestBooks();
+    searchResult && doSearchDisplay(searchResult);
+   
   
      // Get the search input, search button, and checkboxes
     var searchInput = document.getElementById('search');

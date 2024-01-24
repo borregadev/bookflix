@@ -22,7 +22,7 @@ function doSearchDisplay(resultArr) {
         var lists = $('<div>').addClass('lists col-sm-4');
 
         // Cover image
-        var coverResult = $('<img>').attr('src', element.imgURL);
+        var coverResult = $('<img>').attr('src', element.imgURL).attr('width', 180);
         // coverResult.addClass('coverImg');
         cover.append(coverResult);
 
