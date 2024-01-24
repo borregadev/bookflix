@@ -9,6 +9,7 @@
 function doSearchDisplay(resultArr) {
 
     var results = $('#results');
+    results.empty();
 
     //Create Results Title
     var resultsTitle = $('<h2>').text('Searched Book Results');
