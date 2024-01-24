@@ -3,19 +3,20 @@ function searchResults(count) {
     var results = $('#results');
 
     //Create Results Title
-    var resultsTitle = $('<h1>').text('Searched Book Results');
+    var resultsTitle = $('<h2>').text('Searched Book Results');
     results.append(resultsTitle);
 
 
     // Create results row
     for (var i = 0; i < count; i++) {
         var row = $('<div>').addClass('row');
-        var cover = $('<div>').addClass('cover col-sm-2');
-        var information = $('<div>').addClass('information col-sm-2');
-        var lists = $('<div>').addClass('lists col-sm-2');
+        var cover = $('<div>').addClass('cover col-sm-4');
+        var information = $('<div>').addClass('information col-sm-4');
+        var lists = $('<div>').addClass('lists col-sm-4');
 
         // Cover image
         var coverResult = $('<img>').attr('src', './assets/images/cover.jpg');
+        // coverResult.addClass('coverImg');
         cover.append(coverResult);
 
         // Book information
