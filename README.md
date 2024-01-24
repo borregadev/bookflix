@@ -49,10 +49,12 @@ The deployed version can be accessed [here](https://borregaio.github.io/bookflix
 
 ## Steps Followed
 
+
+
 ## Contributors
 
-Carlos Borrega
-Desire Anunobi
-Gjorgji Krstevski
-Mohammed Husain
-Sufyan Gajra
+- Carlos Borrega
+- Desire Anunobi
+- Gjorgji Krstevski
+- Mohammed Husain
+- Sufyan Gajra
