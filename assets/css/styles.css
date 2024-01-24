@@ -90,6 +90,10 @@ hr {
     margin: 20px 0;
 }
 
+.shelf-top {
+    margin: 0;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -141,6 +145,7 @@ footer {
     /* Navbar */
     .navbar-toggle {
         display: block;
+        padding-left: 10px;
     }
 
     .hide {
@@ -156,6 +161,7 @@ footer {
 
     .navbar h1 {
         padding: 10px;
+        margin: 0;
     }
 
     /* Search section */
