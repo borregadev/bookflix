@@ -1,16 +1,43 @@
-
-/* Custom styles */
+/* Reset default styles */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
+/* Navigation Bar */
 .navbar {
     background-color: #f2f2f2;
     padding: 20px 20px 20px 595px;
     text-align: center;
+    position: relative;
 }
 
+.navbar-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px 0;
+}
+
+.navbar h1 {
+    font-family: 'Sofia', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 130px;
+    height: auto;
+}
+
+/* Search Section */
 .search-section {
     display: flex;
     align-items: center;
@@ -19,28 +46,33 @@ body {
     border-bottom: 2px solid #ccc;
 }
 
+.search-box {
+    width: 90%;
+}
+
 .search-label {
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-.search-box {
-    width: 60%; /* Adjust width as needed */
+.btn-primary {
+    background-color: grey;
+    border-color: grey;
 }
 
-
-h1 {
-    font-weight: bold; 
-    text-transform: uppercase;
-}
-
+/* Thin Grey Line */
 hr {
-    border-color: #ccc; 
-    margin: 20;
+    border-color: #cccccc59;
+    margin: 20px;
 }
 
-#results h1 {
-    padding: 20px;
+/* Results Section */
+#results {
+    display: none;
+}
+
+#results h2 {
+    text-align: center;
 }
 
 .row {
@@ -56,18 +88,60 @@ li {
     margin-bottom: 10px;
 }
 
+/*
 .myShelf {  
     position: fixed;
-    right:0;
-    border-style:solid;
-    border-width: 1px;
-    border-color: black; 
-    
+    right: 0;
+    border: 1px solid black;
+    padding: 10px;
+}
+*/
 
+.box {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.box{
-    border-style:solid;
-    border-width: 1px;
-    border-color: black; 
+/* Footer Styling */
+footer {
+    background-color: #f2f2f2;
+    padding: 30px;
+    clear: both;
+    text-align: center;
+}
+
+footer img {
+    display: block; 
+    margin: 0 auto;
+    width: 70px;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .search-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+        margin-right: 0;
+    }
+
+    .navbar img {
+        top: 5px;
+        left: 5px;
+        width: 100px;
+    }
+
+    .myShelf {
+        width: 100%;
+    }
 }
