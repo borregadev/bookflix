@@ -121,6 +121,7 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
     .search-section {
         flex-direction: column;
         align-items: flex-start;
@@ -144,7 +145,7 @@ footer {
 
     .myShelf {
         width: 100%;
-    } 
+    }
 
 }
 
@@ -176,10 +177,10 @@ footer {
     .search-section {
         display: grid;
     }
-  
+
     .search-box input {
         width: 50%;
-    } 
+    }
 
     .search-section button {
         width: 50%;
@@ -189,7 +190,7 @@ footer {
         display: grid;
     }
 
-    .footer{
+    .footer {
         padding: 0;
         display: flex;
         justify-content: center;
