@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             });
 
         // Perform the search based on the selected filters
-        var searchResults = performSearch(searchTerm, selectedFilters);
+        //var searchResults = performSearch(searchTerm, selectedFilters);
 
         // Display the search results or a message if no results are found
-        displaySearchResults(searchResults);
+        //displaySearchResults(searchResults);
     });
 });
 
