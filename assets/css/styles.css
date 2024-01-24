@@ -50,9 +50,9 @@ nav h1 {
 /* Search Section */
 .search-section {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     border-bottom: 2px solid #ccc;
 }
 
@@ -74,6 +74,7 @@ hr {
 /* Results Section */
 #results {
     display: none;
+}
 
 .search-box {
     width: 60%;
@@ -83,7 +84,6 @@ hr {
 hr {
     border-color: #ccc;
     margin: 20;
-
 }
 
 #results h2 {
@@ -107,6 +107,7 @@ li {
     border-style: solid;
     border-width: 1px;
     border-color: black;
+}
 
 .myShelf {
     position: fixed;
