@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    font-family: 'Sofia', cursive;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Navigation Bar */
@@ -28,7 +28,7 @@ body {
     margin: 6px 0;
 }
 
-nav h1 {
+h1 {
     font-family: 'Sofia', cursive;
     font-size: 36px;
     font-weight: bold;
@@ -53,6 +53,7 @@ nav h1 {
     justify-content: space-between;
     padding: 10px;
     border-bottom: 2px solid #ccc;
+    font-family: 'Sofia', cursive;
 }
 
 .search-box {
@@ -107,6 +108,8 @@ li {
 footer {
     background-color: #f2f2f2;
     padding: 20px;
+    font-family: 'Sofia', cursive;
+    text-align: center;
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
