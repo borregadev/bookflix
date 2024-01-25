@@ -65,6 +65,17 @@ nav h1 {
     margin-bottom: 5px;
 }
 
+.topSection { 
+    position: fixed;
+    top: 0;
+    ;
+
+}
+
+
+
+    
+
 /* Thin Grey Line */
 hr {
     border-color: #cccccc;
