@@ -85,6 +85,11 @@ hr {
     text-align: center;
 }
 
+.fixed {
+    position: fixed;
+    right: 0;
+}
+
 .row {
     margin: 20px 0;
 }
@@ -95,6 +100,11 @@ hr {
 
 .myShelf h2 {
     text-align: center;
+}
+
+.booksBox img {
+    height: 50px;
+    width: 30px;
 }
 
 ul {
@@ -114,6 +124,10 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
+    .fixed {
+        position: absolute;
+    }
 
     .search-section {
         flex-direction: column;
@@ -166,6 +180,10 @@ footer {
     .navbar h1 {
         padding: 10px;
         margin: 0;
+    }
+
+    .fixed {
+        position: absolute;
     }
 
     /* Search section */
