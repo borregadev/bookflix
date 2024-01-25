@@ -17,7 +17,7 @@
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <img src="./assets/images/logo-no-background.png" alt="logo-no-background"/>
+        <img src="./assets/images/logo-no-background.png" alt="logo-no-background" />
         <h1>BOOKFLIX</h1>
 
         <div class="navbar-toggle">
@@ -41,23 +41,29 @@
         <!-- Tick Box Options -->
         <div class="tick-box-options">
             <label class="form-check-label">
-                <input type="radio" name="searchType" id="byTitle" class="form-check-input" value="byTitle" checked> By Title
+                <input type="radio" name="searchType" id="byTitle" class="form-check-input" value="byTitle" checked> By
+                Title
             </label>
             <label class="form-check-label">
                 <input type="radio" name="searchType" id="byAuthor" class="form-check-input" value="byAuthor"> By Author
             </label>
             <label class="form-check-label">
-                <input type="radio" name="searchType" id="bySubject" class="form-check-input" value="bySubject"> By Subject
+                <input type="radio" name="searchType" id="bySubject" class="form-check-input" value="bySubject"> By
+                Subject
             </label>
             <label class="form-check-label">
                 <input type="radio" name="searchType" id="byText" class="form-check-input" value="byText"> By Book Text
             </label>
-        </div>        
+        </div>
     </div>
 
     <!-- Search/My Shelf -->
     <div class="row sections">
         <div class="col-lg-6 col-sm-12">
+            <div class="d-flex justify-content-center" >
+                <div id="loadSpinner" class="spinner-border text-secondary m-5" style="width: 4rem; height: 4rem;" role="status">
+                </div>
+            </div>
             <div id="results">
                 <div class="container-fluid search-box"></div>
             </div>
