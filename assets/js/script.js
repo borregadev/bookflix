@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     performSearch(getNewestBooks);
 
     $('.btn-primary').click(() => {
+        $('#loadSpinner').css("display", "block");
+        $('#results').empty();
         // Get the selected checkbox
         const selectedRadioButton = $('input[name="searchType"]:checked').val();
         switch (selectedRadioButton) {
@@ -12,10 +14,10 @@ document.addEventListener('DOMContentLoaded', async function () {
                 performSearch(getResultByTitle);
                 break;
             case "byAuthor":
-
+                performSearch(getResultByAuthor);
                 break;
             case "bySubject":
-
+                performSearch(getResultsBySubject);
                 break;
             case "byText":
 
@@ -32,6 +34,7 @@ async function performSearch(searchFunction) {
     var searchTerm = $('#search').val().toLowerCase().trim();
 
     let searchResult = await searchFunction(searchTerm);
+    $('#loadSpinner').css("display", "none");
     if (searchResult) doSearchDisplay(searchResult);
     else document.getElementById('results').textContent = 'Oh No! 😭 There Are No Search Results Available';
 }
