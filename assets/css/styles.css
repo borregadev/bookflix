@@ -134,7 +134,7 @@ footer {
 @media (max-width: 768px) {
 
     .fixed {
-        position: absolute;
+        position: relative;
     }
 
     .search-section {
@@ -191,7 +191,7 @@ footer {
     }
 
     .fixed {
-        position: absolute;
+        position: relative;
     }
 
     /* Search section */

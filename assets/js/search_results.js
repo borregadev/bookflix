@@ -68,19 +68,26 @@ function doSearchDisplay(resultArr) {
                 // Save the updated array back to local storage
                 localStorage.setItem('wantToRead', JSON.stringify(storedData));
 
-                //Change images on "Want To Read"
+                // Change images on "Want To Read"
+                updateWantToReadImages();
+            });
+
+            // Function to update "Want To Read" images
+            function updateWantToReadImages() {
                 var value = JSON.parse(localStorage.getItem('wantToRead'));
                 var want1 = $('.want1');
-                want1.attr('src', value[0].imgURL);
                 var want2 = $('.want2');
-                want2.attr('src', value[1].imgURL);
                 var want3 = $('.want3');
-                want3.attr('src', value[2].imgURL);
                 var want4 = $('.want4');
-                want4.attr('src', value[3].imgURL);
                 var want5 = $('.want5');
+
+                // Set initial sources based on local storage data
+                want1.attr('src', value[0].imgURL);
+                want2.attr('src', value[1].imgURL);
+                want3.attr('src', value[2].imgURL);
+                want4.attr('src', value[3].imgURL);
                 want5.attr('src', value[4].imgURL);
-            });
+            }
 
             // Add an event listener to the checkbox
             checkboxes.on('change', '#Currentlyreading', function () {
@@ -97,22 +104,26 @@ function doSearchDisplay(resultArr) {
                 // Save the updated array back to local storage
                 localStorage.setItem('currentlyReading', JSON.stringify(storedData));
 
-                // Save the updated array back to local storage
-                localStorage.setItem('currentlyReading', JSON.stringify(storedData));
+                // Change images on "Currently Reading"
+                updateCurrentlyReadingImages();
+            });
 
-                //Change images on "Currently Reading"
+            // Function to update "Currently Reading" images
+            function updateCurrentlyReadingImages() {
                 var value = JSON.parse(localStorage.getItem('currentlyReading'));
                 var reading1 = $('.reading1');
-                reading1.attr('src', value[0].imgURL);
                 var reading2 = $('.reading2');
-                reading2.attr('src', value[1].imgURL);
                 var reading3 = $('.reading3');
-                reading3.attr('src', value[2].imgURL);
                 var reading4 = $('.reading4');
-                reading4.attr('src', value[3].imgURL);
                 var reading5 = $('.reading5');
+
+                // Set initial sources based on local storage data
+                reading1.attr('src', value[0].imgURL);
+                reading2.attr('src', value[1].imgURL);
+                reading3.attr('src', value[2].imgURL);
+                reading4.attr('src', value[3].imgURL);
                 reading5.attr('src', value[4].imgURL);
-            });
+            }
 
             // Add an event listener to the checkbox
             checkboxes.on('change', '#Alreadyread', function () {
@@ -129,22 +140,40 @@ function doSearchDisplay(resultArr) {
                 // Save the updated array back to local storage
                 localStorage.setItem('alreadyRead', JSON.stringify(storedData));
 
-                // Save the updated array back to local storage
-                localStorage.setItem('alreadyRead', JSON.stringify(storedData));
+                // Change images on "Already Read"
+                updateAlreadyReadImages();
+            });
 
-                //Change images on "Already Read"
+            // Function to update "Already Read" images
+            function updateAlreadyReadImages() {
                 var value = JSON.parse(localStorage.getItem('alreadyRead'));
                 var read1 = $('.read1');
-                read1.attr('src', value[0].imgURL);
                 var read2 = $('.read2');
-                read2.attr('src', value[1].imgURL);
                 var read3 = $('.read3');
-                read3.attr('src', value[2].imgURL);
                 var read4 = $('.read4');
-                read4.attr('src', value[3].imgURL);
                 var read5 = $('.read5');
+
+                // Set initial sources based on local storage data
+                read1.attr('src', value[0].imgURL);
+                read2.attr('src', value[1].imgURL);
+                read3.attr('src', value[2].imgURL);
+                read4.attr('src', value[3].imgURL);
                 read5.attr('src', value[4].imgURL);
+            }
+
+            // Initial calls to update "Want to Read", "Currently Reading" and "Already Read" images when the page loads
+            $(document).ready(function () {
+                updateWantToReadImages();
             });
+
+            $(document).ready(function () {
+                updateCurrentlyReadingImages();
+            });
+
+            $(document).ready(function () {
+                updateAlreadyReadImages();
+            });
+
         }
 
         row.append(cover, information, lists);
