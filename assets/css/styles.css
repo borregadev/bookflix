@@ -58,13 +58,18 @@ h1 {
 }
 
 .search-box {
-    width: 90%;
+    width: 70%;
 }
 
 .search-label {
     font-size: 20px;
     margin-bottom: 5px;
 }
+
+.search-box input {
+    font-family: 'Arial', sans-serif;
+}
+
 
 /* Thin Grey Line */
 hr {
