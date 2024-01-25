@@ -63,16 +63,23 @@ nav h1 {
 .search-label {
     font-size: 20px;
     margin-bottom: 5px;
+} 
+
+.search-section { 
+    background-color: white; 
+    width: 85%;
 }
 
-.topSection { 
-    position: fixed;
-    top: 0;
-    ;
+.row-sections { 
 
 }
 
+.whiteBox { 
+    background-color: white;
+    margin-bottom: 200px;
 
+    
+}
 
     
 
